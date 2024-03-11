@@ -7,6 +7,7 @@ from handlers.users.start import get_start
 from aiogram.filters import Command
 
 
+
 dp.startup.register(notify_admins.on_startup_notify)
 dp.message.register(get_start, Command(commands="start"))
 dp.message.register(sort_automag, F.text == ('Автомагазины'))
